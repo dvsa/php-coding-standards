@@ -1,6 +1,6 @@
 {
   "name": "dvsa/coding-standards",
-  "description": "Coding Standards used for PHP in the Driver Vehicle and Standards Agency. PSR Compliant.",
+  "description": "Coding Standards used for PHP in the Driver and Vehicle and Standards Agency. PSR Compliant.",
   "type": "library",
   "license": "MIT",
   "authors": [
