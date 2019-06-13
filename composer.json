@@ -1,0 +1,27 @@
+{
+  "name": "dvsa/coding-standards",
+  "description": "Coding Standards used for PHP in the Driving Vehciles and Standards Agency. PSR Compliant.",
+  "type": "library",
+  "license": "Open Government License http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "authors": [
+    {
+      "name": "Shaun Hare",
+      "email": "shaun.hare@dvsa.gov.uk"
+    },
+    {
+      "name": "Igor Stimoli",
+      "email": "igor.stimoli@bjss.com"
+    },
+    {
+      "name": "Chris Emerson",
+      "email": "chris.emerson@bjss.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "squizlabs/php_codesniffer": "~3.1"
+  },
+  "scripts": {
+    "runcs": "bin/run"
+  }
+}

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+PHPCS="vendor/bin/phpcs"
+PHPCS_STANDARD="src/Profiles/DVSA/CS/ruleset.xml"
+BASE_BRANCH="origin/master"
+
+while getopts "hb:" opt; do
+  case $opt in
+    h)
+        echo;
+        echo Run a coding standards check on code before commiting
+        echo;
+        echo "  -h          Show help (this)"
+        echo "  -b <branch> Base branch for comparing"
+        echo;
+        exit;
+      ;;
+    i)
+        PHPCS_SEVERITY=1
+      ;;
+    b)
+        BASE_BRANCH=$OPTARG
+      ;;
+  esac
+done
+
+
+for file in $(git diff $BASE_BRANCH --name-only);
+do
+	if [ -f $file ]
+		then
+		if [[ ${file: -4} == ".php" ]]
+			then
+			 $PHPCS --severity=$PHPCS_SEVERITY --standard=$PHPCS_STANDARD --colors=1" $file
+		fi
+	fi
+done
