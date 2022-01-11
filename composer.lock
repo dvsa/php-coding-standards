@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "336ce6c3a9b9d10739f0605dd59e5c5d",
+    "content-hash": "cb0206750df4b813e3443a2a8abb42b7",
     "packages": [
         {
             "name": "squizlabs/php_codesniffer",
@@ -2252,11 +2252,13 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.4|^8.0"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
 }

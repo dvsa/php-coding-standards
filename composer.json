@@ -31,7 +31,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Dvsa\\PhpCodingStandards\\PhpCsFixer": "src/Profiles/DVSA/PhpCsFixer"
+      "Dvsa\\PhpCodingStandards\\PhpCsFixer\\": "src/Profiles/DVSA/PhpCsFixer"
     }
   },
   "scripts": {
