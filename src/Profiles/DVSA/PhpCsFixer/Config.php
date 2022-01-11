@@ -1,6 +1,6 @@
 <?php
 
-namespace Dvsa\PhpCodingStandards;
+namespace Dvsa\PhpCodingStandards\PhpCsFixer;
 
 use PhpCsFixer\Config as PhpCsFixerConfig;
 use PhpCsFixer\Finder;
