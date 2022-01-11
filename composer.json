@@ -17,7 +17,8 @@
       "email": "chris.emerson@bjss.com"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "require": {
     "php": "^7.4|^8.0",
     "squizlabs/php_codesniffer": "^3.1"
