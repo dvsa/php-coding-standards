@@ -95,8 +95,8 @@ $ npm run prepare
 ```json
 {
    "**/*.php": [
-      "php ./vendor/bin/php-cs-fixer fix --config .php-cs-fixer.dist.php",
-      "php ./vendor/bin/phpcs -n -p --colors --report=diff"
+      "php ./vendor/bin/php-cs-fixer fix --diff --quiet",
+      "php ./vendor/bin/phpcs --standard=./phpcs.dist.xml --report=diff --colors"
    ]
 }
 ```
@@ -124,9 +124,6 @@ See [CONTRIBUTING.md](/CONTRIBUTING.md)
 
 ## Acknowledgements
 This coding standard is a tweak on top of the PSR2 standard 
-and only possible becuase of that. 
+and only possible because of that. 
 However particularly the time and effort of Chris Emerson BJSS is acknowledged
 for tidying this and working on it during his time on the VOL project. 
- 
-
-
