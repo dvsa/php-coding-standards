@@ -27,7 +27,7 @@
     "friendsofphp/php-cs-fixer": "^2.0"
   },
   "suggest": {
-    "friendsofphp/php-cs-fixer": "To use the shared coding standards fixes provided"
+    "friendsofphp/php-cs-fixer": "To use the shared coding standards ruleset for PHP CS Fixer"
   },
   "autoload": {
     "psr-4": {
