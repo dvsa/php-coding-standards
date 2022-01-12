@@ -102,7 +102,7 @@ $ npm run prepare
 ```
 4. Add `lint-staged` to the `pre-commit` hook:
 ```shell
-npx husky add .husky/pre-commit "lint-staged"
+$ npx husky add .husky/pre-commit "lint-staged"
 ```
 
 The above pre-commit hook will utilise both PHP-CS-Fixer and PHPCS. The fixer will be run before PHP CodeSniffer.
