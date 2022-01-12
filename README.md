@@ -84,31 +84,37 @@ Repositories: [Husky](https://github.com/typicode/husky) & [lint-staged](https:/
 
 1. Install using NPM:
 ```shell
-$ npm i -D husky lint-staged
+$ npm i --save-dev husky lint-staged
 ```
-2. Create `.lintstagedrc`:
-```json
-{
-   "**/*.php": [
-      "php ./vendor/bin/phpcs -n -p --colors --report=diff",
-      "php ./vendor/bin/php-cs-fixer fix --config .php-cs-fixer.dist.php"
-   ]
-}
-```
-3. Configure Husky: 
+2. Configure Husky:
 ```shell
 $ npm set-script prepare "husky install"
 $ npm run prepare
+```
+3. Create `.lintstagedrc`:
+```json
+{
+   "**/*.php": [
+      "php ./vendor/bin/php-cs-fixer fix --config .php-cs-fixer.dist.php",
+      "php ./vendor/bin/phpcs -n -p --colors --report=diff"
+   ]
+}
 ```
 4. Add `lint-staged` to the `pre-commit` hook:
 ```shell
 npx husky add .husky/pre-commit "lint-staged"
 ```
 
+The above pre-commit hook will utilise both PHP-CS-Fixer and PHPCS. The fixer will be run before PHP CodeSniffer.
+
 ## Integrations
 ### JetBrains (IntelliJ/PHPStorm)
+JetBrains have comprehensive documentation for setting up code quality tools.
+- [PHP_CodeSniffer](https://www.jetbrains.com/help/phpstorm/using-php-code-sniffer.html)
+- [PHP CS Fixer](https://www.jetbrains.com/help/phpstorm/using-php-cs-fixer.html)
 
-### VSCode
+**PHP CodeSniffer path to ruleset:** `/phpcs.dist.xml`
+**PHP CS Fixer path to ruleset:** `/.php-cs-fixer.dist.php`
 
 ## Licence 
 See [LICENSE.md](/LICENSE.md)
