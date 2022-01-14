@@ -44,13 +44,13 @@ Due to the number of dependencies in `php-cs-fixer` it must be installed manuall
    ```shell
    $ composer require --dev bamarni/composer-bin-plugin
    ```
-3. Install `php-cs-fixer`. It is [recommended](https://github.com/FriendsOfPHP/PHP-CS-Fixer#installation) to install `PHP-CS-Fixer` in a separate working directory:
+2. Install `php-cs-fixer`. It is [recommended](https://github.com/FriendsOfPHP/PHP-CS-Fixer#installation) to install `PHP-CS-Fixer` in a separate working directory:
     ```shell 
     $ composer bin php-cs-fixer require friendsofphp/php-cs-fixer dvsa/coding-standards
     ```
-4. Create a `.php-cs-fixer.dist.php` file in the root directory of your project.
-5. Add `.php-cs-fixer.cache` to your `.gitignore`. The cache filename can be changed using the `$cacheFilename` parameter (default: `.php-cs-fixer.cache`).
-6. Configure and return a `PhpCsFixer\ConfigInterface` object. This repository provides a preconfigured class:
+3. Create a `.php-cs-fixer.dist.php` file in the root directory of your project.
+4. Add `.php-cs-fixer.cache` to your `.gitignore`. The cache filename can be changed using the `$cacheFilename` parameter (default: `.php-cs-fixer.cache`).
+5. Configure and return a `PhpCsFixer\ConfigInterface` object. This repository provides a preconfigured class:
     ```php
     <?php
     $cacheFilename = '.php-cs-fixer.cache';
