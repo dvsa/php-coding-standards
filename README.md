@@ -1,6 +1,6 @@
 # DVSA PHP Coding Standards
-A custom ruleset for [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) and [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) for use in the Driver and Vehicles Standard Agency.
-DVSA PHP Coding standards are maintained and updated by the developer community at the DVSA. 
+A custom ruleset for [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) and [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) for use in the Driver and Vehicles Standard Agency (DVSA).
+PHP Coding standards are maintained and updated by the developer community at the DVSA. 
 See [CONTRIBUTING.md](/CONTRIBUTING.md) for more information how make changes.
 
 ## Prerequisites
