@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 
-<ruleset name="VOL-v1">
-  <description>Coding standards as agreed by VOL developers in a meeting on 21st December 2017</description>
+<ruleset name="DVSA Standard">
+  <description>Coding standards for PHP projects in the DVSA</description>
 
-  <!-- Project follows PSR-2 standards -->
-  <rule ref="PSR2">
-    <!-- Line length should still be obeyed where possible, but shouldn't be outputting warnings given it's a soft
-     limit rather than a hard requirement. Outputting warnings for non-required things trains people to ignore
-     warnings and can be harmful in the long run -->
+  <rule ref="PSR12">
+    <!--
+      Line length should still be obeyed where possible, but shouldn't be outputting warnings given it's a soft
+      limit rather than a hard requirement. Outputting warnings for non-required things trains people to ignore
+      warnings and can be harmful in the long run
+    -->
     <exclude name="Generic.Files.LineLength"/>
   </rule>
 
