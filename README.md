@@ -1,5 +1,5 @@
 # DVSA PHP Coding Standards
-A custom ruleset for [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) and [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) for use in the Driver and Vehicles Standard Agency (DVSA).
+A custom ruleset for [PHP CodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer) and [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) for use in the Driver and Vehicles Standard Agency (DVSA).
 PHP Coding standards are maintained and updated by the developer community at the DVSA. 
 See [CONTRIBUTING.md](/CONTRIBUTING.md) for more information how make changes.
 
@@ -19,7 +19,7 @@ or if you install the coding standard tools globally use:
 Refer to the [Integrations](#integrations) or [How to run](#how-to-run) section for help with running/integrating in with code editors/IDE.
 
 ### PHP CodeSniffer
-Repository: https://github.com/squizlabs/PHP_CodeSniffer.
+Repository: https://github.com/PHPCSStandards/PHP_CodeSniffer.
 
 1. Create a `phpcs.dist.xml` file in the root directory of your project. Example:
    ```xml
@@ -33,7 +33,7 @@ Repository: https://github.com/squizlabs/PHP_CodeSniffer.
      <rule ref="./vendor/dvsa/coding-standards/src/Profiles/DVSA/CS/ruleset.xml" />
    </ruleset>
    ```
-[XML reference](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset).
+[XML reference](https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki/Annotated-Ruleset).
 
 ### PHP-CS-Fixer
 Repository: https://github.com/FriendsOfPHP/PHP-CS-Fixer.
